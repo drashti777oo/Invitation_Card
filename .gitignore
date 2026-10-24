@@ -1,14 +1,19 @@
-# Environment files
+# Credentials & environment files (keeps your keys off GitHub)
+env.js
 .env
-.env.local
+.env.*
+!.env.example
+!env.example.js
 
 # Redundant nested extraction folder
 rakesh-retirement-invitation-animated/
+rakesh-retirement-invitation-animated
 
 # OS files
 .DS_Store
 Thumbs.db
 
-# Editor directories
+# Editor & build folders
 .vscode/
 .idea/
+node_modules/

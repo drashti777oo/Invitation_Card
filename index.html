@@ -1600,8 +1600,8 @@
        2. By pasting your URL and anon key directly below.
        Never put a service_role secret key or database password in client-side code.
        ========================================================================== */
-    const SUPABASE_URL = (typeof window.__ENV__ !== 'undefined' && window.__ENV__.SUPABASE_URL) || '';
-    const SUPABASE_ANON_KEY = (typeof window.__ENV__ !== 'undefined' && window.__ENV__.SUPABASE_ANON_KEY) || '';
+    const SUPABASE_URL = (typeof window.__ENV__ !== 'undefined' && (window.__ENV__.SUPABASE_URL || window.__ENV__.NEXT_PUBLIC_SUPABASE_URL)) || '';
+    const SUPABASE_ANON_KEY = (typeof window.__ENV__ !== 'undefined' && (window.__ENV__.SUPABASE_ANON_KEY || window.__ENV__.SUPABASE_PUBLISHABLE_KEY)) || '';
 
     const hasSupabaseConfig = typeof SUPABASE_URL === 'string' &&
       SUPABASE_URL.startsWith('https://') &&
