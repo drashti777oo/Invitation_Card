@@ -1,0 +1,14 @@
+# Environment files
+.env
+.env.local
+
+# Redundant nested extraction folder
+rakesh-retirement-invitation-animated/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
